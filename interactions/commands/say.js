@@ -5,6 +5,10 @@ module.exports = {
         { name: 'content', description: 'Message content.', required: true, type: 3 }
     ],
 
+    /**
+    @param {Discord.ChatInputCommandInteraction} interaction
+    */
+
     async execute(interaction) {
         interaction.reply(interaction.options.getString('content'))
     }
